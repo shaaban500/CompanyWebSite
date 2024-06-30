@@ -860,7 +860,7 @@ section,
   overflow: hidden;
 }
 
-.hero .hero-bg img {
+.hero-bg img {
   position: absolute;
   inset: 0;
   display: block;
@@ -870,7 +870,7 @@ section,
   z-index: 1;
 }
 
-.hero .hero-bg::before {
+.hero-bg::before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 15%);
   position: absolute;
