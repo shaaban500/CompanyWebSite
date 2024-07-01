@@ -984,7 +984,7 @@ section,
 
 .featured-services .service-item .icon {
   background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
-  width: 72px;
+  width: 50px;
   height: 72px;
   position: relative;
   margin-right: 15px;
@@ -1262,13 +1262,26 @@ section,
   background-color: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   height: 100%;
-  padding: 30px;
+  padding: 40px;
   transition: 0.3s;
   border-radius: 10px;
   display: flex;
 }
 
+
 .services .service-item .icon {
+  font-size: 32px;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+.services .service-item .i {
   font-size: 32px;
   border-radius: 10px;
   position: relative;
@@ -1286,10 +1299,14 @@ section,
   font-weight: 700;
   font-size: 22px;
   transition: 0.3s;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 20px;
 }
 
 .services .service-item p {
   margin-bottom: 0;
+  margin-top: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   transition: 0.3s;
 }
@@ -1941,6 +1958,15 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+.market{
+  height: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+}
+.fetch1{
+  padding-left: 100px;
 }
 
 /*--------------------------------------------------------------
