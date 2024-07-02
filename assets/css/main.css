@@ -1258,58 +1258,81 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.container {
+  padding: 0px;
+}
+.container .hero-img{
+  height: auto;
+}
+@media (max-width: 768px) {
+  .container .hero-img{
+    display: none;
+  }
+}
+
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+} */
+
+.col-lg-4, .col-md-12 {
+  /* flex: 1 1 30%;  */
+  box-sizing: border-box;
+  /* display: flex; */
+}
+
+@media (max-width: 768px) {
+  .col-lg-4, .col-md-12 {
+    flex: 1 1 100%; 
+  }
+}
+
 .services .service-item {
   background-color: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  height: 100%;
   padding: 40px;
+  text-align: center;
+  position: relative;
+  align-items: center;
   transition: 0.3s;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
+ 
+  height: 100%; /* Make all service items equal height */
 }
-
 
 .services .service-item .icon {
+  margin-bottom: 20px; /* Fixed spacing between icon and heading */
   font-size: 32px;
   border-radius: 10px;
-  position: relative;
-  margin-right: 25px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 72px;
   height: 72px;
   flex-shrink: 0;
-}
-.services .service-item .i {
-  font-size: 32px;
-  border-radius: 10px;
-  position: relative;
-  margin-right: 25px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 72px;
-  flex-shrink: 0;
+  text-align: center;
 }
 
 .services .service-item h3 {
+  margin: 0;
+  margin-bottom: 20px; /* Fixed spacing between heading and paragraph */
   color: color-mix(in srgb, var(--heading-color), transparent 25%);
   font-weight: 700;
   font-size: 22px;
   transition: 0.3s;
-  margin-left: 20px;
-  margin-top: 20px;
-  height: 20px;
 }
 
 .services .service-item p {
-  margin-bottom: 0;
-  margin-top: 15px;
+  margin: 0;
+  text-align: left;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   transition: 0.3s;
 }
+
+
 
 .services .service-item .read-more {
   display: inline-flex;
@@ -1967,6 +1990,47 @@ section,
 }
 .fetch1{
   padding-left: 100px;
+}
+@media (max-width: 768px) {
+  .fetch1{
+    padding-left: 10px;
+  }
+}
+
+
+.firstSection{
+  width: 50%; /* Occupies 50% of the parent container */
+  float: left; /* Ensures elements float left */
+  box-sizing: border-box;
+  
+  
+}
+@media (max-width: 768px) {
+  .firstSection{
+    display: none;
+  }
+}
+
+
+.SecondSection{
+  width: 50%; /* Occupies 50% of the parent container */
+  float: left; /* Ensures elements float left */
+  box-sizing: border-box;
+  
+}
+@media (max-width: 768px) {
+  .SecondSection{
+    width: 100%; /* Occupies 50% of the parent container */
+    float: left; /* Ensures elements float left */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    
+
+  }
 }
 
 /*--------------------------------------------------------------
